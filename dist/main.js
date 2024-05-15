@@ -16,17 +16,27 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_images_mockup_home_page_JPG__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/mockup_home_page.JPG */ \"./src/assets/images/mockup_home_page.JPG\");\n\n\nconsole.log(\"Hola mundo\");\ndocument.getElementById(\"app\").innerHTML = \"<img src=\\\"\".concat(_assets_images_mockup_home_page_JPG__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \"\\\" alt=\\\"img home page\\\">\");\n\n//# sourceURL=webpack://expressserver/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_images_mockup_home_page_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/images/mockup_home_page.jpg */ \"./src/assets/images/mockup_home_page.jpg\");\n/* harmony import */ var _assets_images_logo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/logo.jpg */ \"./src/assets/images/logo.jpg\");\n\n\n\n\n//document.getElementById(\"app\").innerHTML=`<img src=\"${homePage}\" alt=\"img home page\">`\n\nvar d = document,\n  $app = d.getElementById(\"app\"),\n  $h1 = d.createElement(\"h1\"),\n  $img = d.createElement(\"img\"),\n  $logo = d.createElement(\"img\");\n$h1.textContent = \"My Cup\";\n$logo.src = _assets_images_logo_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n$img.src = _assets_images_mockup_home_page_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n$app.appendChild($h1);\n$app.appendChild($img);\n$app.appendChild($logo);\n\n//# sourceURL=webpack://expressserver/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/assets/images/mockup_home_page.JPG":
+/***/ "./src/assets/images/logo.jpg":
+/*!************************************!*\
+  !*** ./src/assets/images/logo.jpg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/logo.jpg\");\n\n//# sourceURL=webpack://expressserver/./src/assets/images/logo.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/mockup_home_page.jpg":
 /*!************************************************!*\
-  !*** ./src/assets/images/mockup_home_page.JPG ***!
+  !*** ./src/assets/images/mockup_home_page.jpg ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/mockup_home_page.JPG\");\n\n//# sourceURL=webpack://expressserver/./src/assets/images/mockup_home_page.JPG?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/mockup_home_page.jpg\");\n\n//# sourceURL=webpack://expressserver/./src/assets/images/mockup_home_page.jpg?");
 
 /***/ }),
 

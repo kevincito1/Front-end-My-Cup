@@ -10,11 +10,15 @@ const d = document,
     $h1=d.createElement("h1"),
     $img=d.createElement("img"),
     $logo=d.createElement("img")
+    
+    
 
 $h1.textContent="My Cup";
 $logo.src=logo;
 $img.src=homePage;
 
+
 $app.appendChild($h1)
 $app.appendChild($img)
 $app.appendChild($logo)
+
