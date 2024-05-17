@@ -1,0 +1,35 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@font-face {
+    font-family:"renegade-pursuit";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./8b0ea6c9eb21ea0bd728.otf) format("otf");
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: "renegade-pursuit";
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+}
