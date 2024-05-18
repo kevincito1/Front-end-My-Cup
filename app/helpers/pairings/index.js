@@ -208,3 +208,4 @@ const matches = generateMatchesWithResultsAndGoals(teams);
 // Print the matches with results and goals distribution
 printMatchesWithResultsAndGoals(matches);
 
+console.log(matches)
