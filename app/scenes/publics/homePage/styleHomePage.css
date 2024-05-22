@@ -1,0 +1,255 @@
+
+/* @font-face {
+    font-family: 'principal';
+    src: url(/myCup/fonts/renegade-pursuit/Renegade\ Pursuit.otf);
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url(/myCup/fonts/news-of-the-world/News\ of\ the\ World\ regular.ttf);
+}
+
+@font-face {
+    font-family: 'texts';
+    src: url(/myCup/fonts/Rethink_Sans/RethinkSans-VariableFont_wght.ttf);
+} */
+
+body {
+    background-image: url(./assetsHomePage/football.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#logo {
+    height: 70%;
+}
+
+.myCup {
+    margin: 0%;
+    color: white;
+}
+
+.button {
+    display: flex;
+    margin: 12% 5%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 30px;
+    font-family: 'paragraph';
+}
+
+.button:hover {
+    background-color: #A4161A;
+    color: white;
+}
+
+.navbar {
+    text-justify: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% auto;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 25px solid rgb(164, 22, 26, 0.5);
+    border-top: 25px solid rgb(164, 22, 26, 0.5);
+}
+
+.menu {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+#title {
+    font-size: 200%;
+}
+
+#text {
+    width: 50%;
+    font-size: 100%;
+    font-family: 'texts';
+}
+
+main {
+    display: flex;
+}
+
+.main {
+    color: white;
+    width: 70%;
+    margin: 1% 5%;
+}
+
+#arrow {
+    background-color: #A4161A;
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: 1000;
+    padding: 5px;
+    color: white;
+}
+
+#arrow:hover {
+    background-color: white;
+    color: #A4161A;
+}
+
+#create {
+    background-color: #A4161A;
+    border-radius: 15px;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bolder;
+}
+
+#create:hover {
+    background-color: white;
+    color: #A4161A;
+}
+
+.add {
+    float: right;
+    width: 20%;
+    height: 30%;
+    background-color: white;
+    margin: 1% 5%;
+}
+
+#aboutUs {
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.features {
+    width: 40%;
+}
+
+.questions {
+    height: 100%;
+    display: flex;
+    background-image: url(./assetsHomePage/the-soccer-field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logoAbout {
+    height: 200px;
+    margin: 25% auto 0 auto;
+}
+
+.redes {
+    width: 100%;
+}
+
+.red {
+    width: 15%;
+}
+
+#logoAboutUs {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+
+.titles {
+    margin: auto auto;
+    font-weight: 1000;
+}
+
+h2 {
+    color: #A4161A;
+    font-weight: bolder;
+}
+
+#nameQuestions {
+    color: white;
+}
+
+.logoCup {
+    width: 70px;
+    margin: 0;
+}
+
+.logoName {
+    margin: 0 8%;
+    font-size: medium;
+    color: white;
+}
+
+.logoNameEvents {
+    margin-left: 30%;
+    font-size: medium;
+    color: white;
+}
+
+.tournaments {
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    background-color: #A4161A;
+}
+
+.tables {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.currentTournamentsTable {
+    text-align: center;
+    width: 50%;
+    background-color: #A4161A;
+    color: white;
+}
+
+.trophy {
+    width: 50px;
+    height: 50px;
+}
+
+.events {
+    background-color: #A4161A;
+    width: 50%;
+    color: white;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.myCup {
+    font-family: 'principal';
+    color: red;
+}

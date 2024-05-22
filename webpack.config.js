@@ -35,8 +35,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg|ico)$/, // Expresión regular para identificar los archivos de imágenes
-        use: ['file-loader?name=assets/[name].[ext]'] // Loader a utilizar, file-loader, copia los archivos de imágenes al directorio de salida
+        test: /\.(png|jpe?g|gif|svg|ico|webp)$/, // Expresión regular para identificar los archivos de imágenes
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name][ext]'
+        } // Loader a utilizar, file-loader, copia los archivos de imágenes al directorio de salida
       }
     ]
   },
@@ -55,7 +58,7 @@ module.exports = {
       directory: path.join(__dirname, 'dist') // Directorio de salida
     },
     compress: true, // Habilita la compresión
-    port: 3000, // Puerto del servidor
+    port: 9000, // Puerto del servidor
     historyApiFallback: { // Habilita el enrutamiento de aplicaciones de una sola página
       index: '/index.html', // super importante para que funcione el enrutamiento de aplicaciones de una sola página
     }

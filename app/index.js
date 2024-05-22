@@ -1,28 +1,31 @@
-import style from "./style.css";
-import homePage from "./assets/images/mockup_home_page.jpg"
-import logo from "./assets/images/logo.jpg"
-import loader from "./assets/images/loader.svg"
+
+import {showLandingPage} from "./scenes/publics/homePage/indexHome"
+import { newsPage } from "./scenes/publics/news/indexNews"
+import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
+import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
+import {LoginPage} from "./scenes/privates/login/LoginPage"
 
 
-//document.getElementById("app").innerHTML=`<img src="${homePage}" alt="img home page">`
-
-const d = document,
-    $app=d.getElementById("app"),
-    $h1=d.createElement("h1"),
-    $img=d.createElement("img"),
-    $logo=d.createElement("img"),
-    $loader=d.createElement("img")
-    
-    
-
-$h1.textContent="My Cup";
-$logo.src=logo;
-$img.src=homePage;
-$loader.src=loader
+const page = document.getElementById("app")
 
 
-$app.appendChild($h1)
-$app.appendChild($img)
-$app.appendChild($logo)
-$app.appendChild($loader)
+// page.innerHTML = `
+// ${newsPage}`
 
+// page.innerHTML = `
+// ${showLandingPage}`
+
+// page.innerHTML = `
+// ${loggedPage}
+// `
+
+// page.innerHTML = `
+// ${gamePLacesPage}
+// `
+
+const {html: loginHtml, logic: loginLogic} = LoginPage()
+
+page.innerHTML = `
+${loginHtml}
+`
+loginLogic()
