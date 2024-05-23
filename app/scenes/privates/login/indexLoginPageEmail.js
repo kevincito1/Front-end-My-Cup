@@ -7,9 +7,9 @@ import {
   formSpanText,
   formBtnSumit,
   formInfoText,
-} from "./styleLoginEmail.css";
+} from "./styleLogin.css";
 
-export function LoginPage() {
+export function LoginPageEmail() {
   const html = `
 <main>
   <section class="${formMain}">

@@ -20,9 +20,7 @@ export function ScoreScene() {
     </div>
     `
     score.innerHTML = `
-    ${showScore}
-
-    
+    ${showScore}    
 `
 }
 

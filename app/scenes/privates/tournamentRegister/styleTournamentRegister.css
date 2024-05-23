@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+.tournamentRegister{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.tournament{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px;
+    padding: 50px 200px 50px 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #ba181b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form1{
+    border-radius: 5%;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form2{
+    border-radius: 5%;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
+}
+
+.form3{
+    border-radius: 5%;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
+}
+
+.form4{
+    border-radius: 5%;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
+}
+
+.form5{
+    border-radius: 5%;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
+}
+
+.form6{
+    border-radius: 5%;
+    padding: 8px 50px 22px 50px;
+    margin-bottom: 10px;
+}
+
+.form7{
+    border-radius: 5%;
+    padding: 10px 50px 20px 50px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    all: unset;
+    font-size: 18px;
+    padding: 0.8rem 3rem;
+    background-color: #fefefe;
+    color: black;
+    line-height: 1.5;
+    font-weight: 600;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 600px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  background: #000000;
+  background: #ba181b;
+  width: 101%;
+  height: 103%;
+  pointer-events: none;
+  transform: skew(30deg) translateY(0);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.btn::before {
+    --direction: 1;
+    top: -103%;
+    left: -70%;
+  }
+  .btn::after {
+    --direction: -1;
+    top: 102%;
+    left: 69%;
+  }
+
+.btn:hover::before,
+.btn:hover::after {
+  transform: skew(30deg) translateY(calc(var(--direction) * 100%));
+}
+
+.button {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    display: block;
+    transition: 0.3s;
+}
+
+.btn:hover .text:nth-child(1) {
+    color: rgb(255, 255, 255);
+    translate: 0 80%;
+
+
+}
+
+.text:nth-child(2) {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    inset: 0;
+    translate: 0 -80%;
+}
+
+.btn:hover .text:nth-child(2) {
+    transition-delay: 0.1s;
+    translate: 0 0;
+}

@@ -3,7 +3,9 @@ import {showLandingPage} from "./scenes/publics/homePage/indexHome"
 import { newsPage } from "./scenes/publics/news/indexNews"
 import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
 import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
-import {LoginPage} from "./scenes/privates/login/LoginPage"
+import {LoginPageEmail} from "./scenes/privates/login/indexLoginPageEmail"
+import {LoginPagePassword} from "./scenes/privates/login/indexLoginPagePassword"
+import {tournamentRegisterPage} from "./scenes/privates/tournamentRegister/indexTournamentRegister"
 
 
 const page = document.getElementById("app")
@@ -23,9 +25,20 @@ const page = document.getElementById("app")
 // ${gamePLacesPage}
 // `
 
-const {html: loginHtml, logic: loginLogic} = LoginPage()
+// const {html: loginHtmlEmail, logic: loginLogic} = LoginPageEmail()
+
+// page.innerHTML = `
+// ${loginHtmlEmail}
+// `
+// loginLogic()
+
+// const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
+
+// page.innerHTML = `
+// ${loginHtmlPassword}
+// `
+// loginLogicPassword()
 
 page.innerHTML = `
-${loginHtml}
+${tournamentRegisterPage}
 `
-loginLogic()
