@@ -14,8 +14,8 @@ const page = document.getElementById("app")
 // page.innerHTML = `
 // ${newsPage}`
 
-// page.innerHTML = `
-// ${showLandingPage}`
+page.innerHTML = `
+${showLandingPage}`
 
 // page.innerHTML = `
 // ${loggedPage}
@@ -39,6 +39,6 @@ const page = document.getElementById("app")
 // `
 // loginLogicPassword()
 
-page.innerHTML = `
-${tournamentRegisterPage}
-`
+// page.innerHTML = `
+// ${tournamentRegisterPage}
+// `

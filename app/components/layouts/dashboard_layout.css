@@ -1,0 +1,19 @@
+.navbar {
+    text-justify: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% auto;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 25px solid rgb(164, 22, 26, 0.5);
+    border-top: 25px solid rgb(164, 22, 26, 0.5);
+}
+
+.menu {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}

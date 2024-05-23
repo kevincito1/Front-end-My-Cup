@@ -27,7 +27,7 @@ export const showLandingPage =`
 
     <nav class="${navbar}">
       <div class="${menu}">
-        <a href="#matches">Matches</a>
+        <a href="${'/dashboard/register'}">Matches</a>
         <a href="#tournaments">Tournaments</a>
         <a href="#stats">Stats</a>
         <a href="#news">News</a>
