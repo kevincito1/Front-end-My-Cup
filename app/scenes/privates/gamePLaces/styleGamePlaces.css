@@ -80,9 +80,9 @@ body {
 
 .team {
     background-image: url(./assetsGamePlaces/img/abigail-keenan-8-s5QuUBtyM-unsplash.jpg);
+    height: 40vh;
     background-color: #B22222;
     color: white;
-    padding: 100px;
     border-radius: 15px; 
     background-size: cover;
     background-position: center;
@@ -91,4 +91,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menuItem:hover {
+    background-color:#FF6347;
+}
+
+.team:hover{
+    cursor: pointer;
+    color: #8B0000;
 }

@@ -35,7 +35,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg|ico|webp)$/, // Expresión regular para identificar los archivos de imágenes
+        test: /\.(png|jpe?g|gif|svg|ico|webp|mp4)$/, // Expresión regular para identificar los archivos de imágenes
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name][ext]'

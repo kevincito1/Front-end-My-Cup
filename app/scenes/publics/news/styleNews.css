@@ -35,35 +35,57 @@ header nav ul li a {
     font-size: 25px;
 }
 
+header nav ul li a:hover {
+    color: black;
+}
+
+.mainContent {
+    width: 80%;
+}
+
+.mainContent img{
+    width: 100%;
+}
+
 .mainNews {
+    display: flex;
     background: #fff;
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.mainNewsItem {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-}
-.mainImage {
-    height: 50dvh
-}
-
 
 .additionalImages {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 20px;
+    display: grid;   
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    width: 20%;
 }
 
 .additionalImages img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.publishDespegar {
+    grid-column: 1/2;
+    grid-row: 1/3
+}
+
+.publishTrivago {
+    grid-column: 2/3;
+    grid-row:1/2
+}
+
+.publishDunkin {
+    grid-column:1/3;
+    grid-row:2/3
+}
+
+.publishWendys{
+    grid-column: 1/3;
+    grid-row:3/5
 }
 
 .mainNewsText {
@@ -104,3 +126,4 @@ header nav ul li a {
 .otherNewsItem p {
     margin: 0;
 }
+

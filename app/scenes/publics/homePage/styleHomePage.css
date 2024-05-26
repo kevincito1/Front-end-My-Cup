@@ -1,255 +1,565 @@
 
-/* @font-face {
-    font-family: 'principal';
-    src: url(/myCup/fonts/renegade-pursuit/Renegade\ Pursuit.otf);
+
+main {
+    background-color: #ffffff;
 }
 
-@font-face {
-    font-family: 'paragraph';
-    src: url(/myCup/fonts/news-of-the-world/News\ of\ the\ World\ regular.ttf);
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #A4161A
 }
 
-@font-face {
-    font-family: 'texts';
-    src: url(/myCup/fonts/Rethink_Sans/RethinkSans-VariableFont_wght.ttf);
-} */
-
-body {
-    background-image: url(./assetsHomePage/football.jpg);
+/*HEADER*/
+.header {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: auto;
+    /* Hace que la imagen cubra todo el header */
+    background-position: top center;
+    background-image: url("../homePage/assetsHomePage/michael-ungacta-WEHl3v-gQgs-unsplash.jpg");
+
 }
 
-header {
-    height: 10vh;
+.logocontainer {
+    margin-top: 0%;
+    width: 10%;
+    height: 20%;
+}
+
+.containerlogo {
+    margin-left: 12%;
     display: flex;
-    justify-content: space-around;
-    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
 }
 
-#logo {
-    height: 70%;
+.logoimg {
+    margin: 0 auto;
+    width: 80%;
+    height: 8vh;
 }
 
-.myCup {
-    margin: 0%;
-    color: white;
-}
-
-.button {
-    display: flex;
-    margin: 12% 5%;
-    background-color: white;
-    border-radius: 15px;
-    padding: 5px 30px;
-    font-family: 'paragraph';
-}
-
-.button:hover {
-    background-color: #A4161A;
-    color: white;
+.titlelogo {
+    font-size: 34px;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 3%;
 }
 
 .navbar {
-    text-justify: auto;
-    width: 70%;
+    width: 32vw;
+    height: 5vh;
+    margin-top: 2%;
+    margin-left: 15%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 3% auto;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-bottom: 25px solid rgb(164, 22, 26, 0.5);
-    border-top: 25px solid rgb(164, 22, 26, 0.5);
+
 }
 
-.menu {
-    position: absolute;
-    width: 70%;
+.ulnavbar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
 
-a:hover {
-    text-decoration: underline;
-    font-size: larger;
-}
-
-#title {
-    font-size: 200%;
-}
-
-#text {
-    width: 50%;
-    font-size: 100%;
-    font-family: 'texts';
-}
-
-main {
-    display: flex;
-}
-
-.main {
-    color: white;
-    width: 70%;
-    margin: 1% 5%;
-}
-
-#arrow {
-    background-color: #A4161A;
-    border-radius: 50%;
-    font-size: larger;
-    font-weight: 1000;
-    padding: 5px;
-    color: white;
-}
-
-#arrow:hover {
-    background-color: white;
-    color: #A4161A;
-}
-
-#create {
-    background-color: #A4161A;
-    border-radius: 15px;
-    color: white;
-    padding: 8px 15px;
-    font-weight: bolder;
-}
-
-#create:hover {
-    background-color: white;
-    color: #A4161A;
-}
-
-.add {
-    float: right;
-    width: 20%;
-    height: 30%;
-    background-color: white;
-    margin: 1% 5%;
-}
-
-#aboutUs {
-    width: 50%;
-    margin: auto;
-    color: white;
-}
-
-.contact {
-    display: flex;
-    float: left;
-    width: 100%;
-}
-
-.features {
-    width: 40%;
-}
-
-.questions {
-    height: 100%;
-    display: flex;
-    background-image: url(./assetsHomePage/the-soccer-field.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#logoAbout {
-    height: 200px;
-    margin: 25% auto 0 auto;
-}
-
-.redes {
-    width: 100%;
-}
-
-.red {
-    width: 15%;
-}
-
-#logoAboutUs {
-    text-align: center;
-    font-size: 150%;
-    color: white;
-}
-
-.titles {
-    margin: auto auto;
-    font-weight: 1000;
-}
-
-h2 {
-    color: #A4161A;
-    font-weight: bolder;
-}
-
-#nameQuestions {
-    color: white;
-}
-
-.logoCup {
-    width: 70px;
+.elementul {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Opcional: elimina el padding por defecto del ul */
     margin: 0;
+    /* Opcional: elimina el margin por defecto del ul */
+    margin-left: 15%;
 }
 
-.logoName {
-    margin: 0 8%;
-    font-size: medium;
-    color: white;
+.elementul a {
+    color: var(--primary-color);
+
+    text-decoration: none;
+    /* Elimina el subrayado de todos los enlaces */
+    transition: 0.5ms;
 }
 
-.logoNameEvents {
-    margin-left: 30%;
-    font-size: medium;
-    color: white;
+.elementul a:hover {
+    color: var(--secondary-color);
+
+    text-decoration: none;
+    /* Elimina el subrayado de todos los enlaces */
+
 }
 
-.tournaments {
-    font-size: larger;
-    font-weight: bolder;
-    color: white;
-    width: 70%;
-    margin: auto;
-    align-items: center;
-    background-color: #A4161A;
-}
-
-.tables {
+.containerbuttons {
+    margin-top: 1%;
     display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 5hv;
+    height: 18vh;
+    margin-left: 30%;
+}
+
+.buttonnav {
+    border: 1px solid rgb(156, 5, 5);
+    border-radius: 0;
+    margin: auto;
+    margin-top: 10%;
+    width: 10vw;
+    height: 5vh;
+    background-color: transparent;
+    transition: 0.5s;
+    color: var(--primary-color);
+}
+
+.buttonnav:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.heroprincipaltext1 {
+    font-size: 300%;
+    position: absolute;
+    left: 3%;
+    bottom: 60%;
+    animation: h 7s 2;
+    color: white;
+}
+
+.heroprincipaltext2 {
+    font-size: 200%;
+    position: absolute;
+    left: 3%;
+    bottom: 54%;
+    animation: h 7s 2;
+    color: white;
+}
+
+@keyframes h {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 150px;
+    }
+}
+
+.herosecondarytext {
+    font-size: 132%;
+    position: absolute;
+    left: 3%;
+    bottom: 38%;
+    width: 35%;
+    animation: h 7s 2;
+    color: white;
+}
+
+.buttonsinghero1 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    position: absolute;
+    left: 2.5%;
+    bottom: 30%;
+    width: 25%;
+    height: 5%;
+    border-radius: 20px;
+    border: 0;
+    transition: 0.5s;
+    animation: h 7s 2;
+}
+
+button {
+    cursor: pointer;
+}
+
+.buttonsinghero1:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+
+}
+
+.buttonsinghero2 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    position: absolute;
+    left: 3%;
+    bottom: 20%;
+    width: 5%;
+    height: 5%;
+    border-radius: 20px;
+    border: 0;
+    transition: 0.5s;
+
+}
+
+.buttonsinghero2:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+
+}
+
+
+.dummyadd {
+    width: 400px;
+    height: 30vh;
+    background-color: #ccc;
+    color: #333;
+    border: 1px solid #999;
+    position: relative;
+    left: -1%;
+    top: 50%;
+}
+
+/*ABOUT*/
+
+.aboutsection {
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: cutAnimation 3s 5 alternate;
+
+
+}
+
+.midcontainer1 {
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.midcontainer2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.containerimgabout {
+
+    margin: 0% auto;
+    width: 80%;
+    height: 80%;
+}
+
+.imgabout {
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+}
+
+.titleabout {
+    text-align: center;
+    font-size: 34px;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 8%;
+}
+
+.textabout {
+    margin-top: 2%;
+    font-size: 132%;
+    width: 80%;
+    color: black;
+    margin-left: 15%;
+}
+
+
+
+.widgetcontainer {
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+/*SERVICES*/
+
+.videocontainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#backgroundvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.videooverlay {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+video{
+    max-width: 950px;
+}
+
+
+
+.videooverlay p {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-left: 100%;
+    margin-top: 240%;
+}
+
+
+
+.servicessection {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     width: 70%;
+    background-color: #580000;
+    animation: h 7s 2;
+    border-radius: 25px;
+    margin-bottom: 2%;
+
+
+}
+
+.servicessectiontitle {
+    margin: 0 auto;
+    margin-top: 2%;
+    color: var(--primary-color);
+    font-size: 3cap;
+}
+
+.services {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    /* Espacio entre los elementos */
+    width: 100%;
+    /* Ancho del contenedor */
+    margin: 0 auto;
+    /* Centramos horizontalmente */
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 2%;
+    max-height: 500px;
+}
+
+@keyframes hs {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 150px;
+    }
+}
+
+.serviceselement {
+    width: 70%;
+    height: 30vh;
+    background-color: #410808af;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 130px;
+    display: flex;
+    flex-direction: row;
+}
+
+.serviceelementimgcontainer {
+    width: 25%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.imgservice {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.serviceselementtextcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: 90%;
+}
+
+.serviceselementtextcontainer h1 {
     margin: auto;
 }
 
-.currentTournamentsTable {
+.serviceselementtextcontainer p {
+    margin-top: 5%;
+}
+
+.titletargert {
+    color: black;
+}
+
+.team {
     text-align: center;
-    width: 50%;
-    background-color: #A4161A;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(24, 2, 2, 1) 50%, rgba(68, 7, 7, 1) 100%);
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+
+
+.containerteam {
+    margin: auto;
+    height: 90%;
+    width: 80%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+}
+
+.card {
+    display: flex;
+    height: 55vh;
+    width: 20%;
+    background-color: #17141d;
+    border-radius: 0px;
+    box-shadow: -1rem 0 3rem #000;
+    /*   margin-left: -50px; */
+    transition: 0.3s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.imgcontainercard{
+    width: 90%;
+    height: 30%;
+}
+
+.imgcontainercard img{
+    width: 100%;
+    height: max(20rem);
+    margin-top: 22.5%;
+    margin-left: 5.5%;
+    object-fit: cover;
+}
+
+.title {
     color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20%;
+    top: 2%;
 }
 
-.trophy {
-    width: 50px;
-    height: 50px;
-}
-
-.events {
-    background-color: #A4161A;
-    width: 50%;
+#title2{
     color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 15%;
+    top: 85%; 
+}
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    height: 5px;
+    width: 90%;
 }
 
-table {
-    border: 1px solid black;
+.emptybar {
+    margin-top: 120%;
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
 }
 
-.myCup {
-    font-family: 'principal';
-    color: red;
+.filledbar {
+    margin-top: 120%;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0, 154, 217);
+    background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 65%, rgba(255, 186, 0, 1) 100%);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+}
+
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #17141d;
+    stroke-width: 2px;
+}
+
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+
+
+@keyframes cutAnimation {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
 }

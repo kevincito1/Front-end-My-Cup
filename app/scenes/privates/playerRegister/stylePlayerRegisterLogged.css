@@ -95,7 +95,11 @@ body {
 }
 
 .team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #B22222;
+    height: 30vh;
     color: white;
     padding: 50px;
     border-radius: 15px;

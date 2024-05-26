@@ -1,161 +1,171 @@
-import {button, myCup, navbar, menu, main, title, text, arrow, create, tournaments, logoCup, tables, currentTournamentsTable, trophy, events, aboutUs, contact, features, logoAboutUs, logoAbout, titles, red, add, redes, questions} from "./styleHomePage.css"
-//import homePage from "./assets/images/mockup_home_page.jpg"
-import logo from "./assetsHomePage/logo.png"
-import trophy1 from "./assetsHomePage/trophy7.png"
-import trophy2 from "./assetsHomePage/trophy.png"
-import wpp from "./assetsHomePage/wpp.png"
-import fb from "./assetsHomePage/fb.png"
-import email from "./assetsHomePage/email.png"
-import x from "./assetsHomePage/x.png"
-//import loader from "./assets/images/loader.svg"
+import {
+  header, logocontainer, containerlogo, titlelogo, navbar, ulnavbar, elementul, containerbuttons,
+  buttonnav, heroprincipaltext1, heroprincipaltext2, herosecondarytext, buttonsinghero1, 
+  aboutsection, midcontainer1, midcontainer2, containerimgabout, imgabout, titleabout, textabout, team,  containerteam,  servicessection ,servicessectiontitle ,card,title,emptybar,filledbar,circle,bar ,videocontainer,videooverlay,backgroundvideo,imgcontainercard,title2} from "./styleHomePage.css";
+
+import globalStyle from "../../../styles/globalStyles.css";  
+
+import myvideo from "./assetsHomePage/video.mp4";
+import imageabout from "./assetsHomePage/arseny-togulev-xjnSIF9keGY-unsplash.jpg";
+import imagekevin from "./assetsHomePage/kevin.jpeg";
+import imageJhonier from "./assetsHomePage/jhonier.jpeg";
+import imageFelipe from "./assetsHomePage/felipe.jpeg";
 
 
-
-
-export const showLandingPage =`
-<body>
-<header>
-      <div>
-        <img id="logo" src="${logo}" alt="logoMyCup" />
-        <h2 class="${myCup}">My Cup</h2>
+ 
+  export const sceneHome = `
+  <main>
+  <header class="${header}">
+    <div class ="${logocontainer}">
+      <div class="${containerlogo}">
+        <h2 class="${titlelogo}">My Cup</h2>
       </div>
-      <div>
-        <button class="${button}">SignUp→</button>
-        <button class="${button}">Register→</button>
+    </div>
+    <div class="${navbar}">
+      <ul class="${ulnavbar}">
+        <li class="${elementul}"><a href="">ABOUT</a></li>
+        <li class="${elementul}"><a href="">SERVICES</a></li>
+        <li class="${elementul}"><a href="">NEWS</a></li>
+        <li class="${elementul}"><a href="">TEAM</a></li>
+        <li class="${elementul}"><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="${containerbuttons}">
+      <button class="${buttonnav}">Login</button>
+      <button class="${buttonnav}">Sign Up</button>
+    </div>
+    <h2 class="${heroprincipaltext1}">CREATE YOUR OWN TEAM</h2>
+    <h2 class="${heroprincipaltext2}">PLAY EVERY GAME</h2>
+    <p class="${herosecondarytext}">
+      Get to play and live a memorable experience with your team. What are you waiting for this great adventure and winning rewards and bonuses
+    </p>
+    <button class="${buttonsinghero1}">Create your tournament now</button>
+  </header>
+  <div class="${aboutsection}">
+      <div class="${midcontainer1}">
+        <div class="${containerimgabout}">
+          <img class="${imgabout}" src="${imageabout}" alt="About Us">
+        </div>
       </div>
-    </header>
-
-    <nav class="${navbar}">
-      <div class="${menu}">
-        <a href="${'/dashboard/register'}">Matches</a>
-        <a href="#tournaments">Tournaments</a>
-        <a href="#stats">Stats</a>
-        <a href="#news">News</a>
-        <a href="">FAQ</a>
-        <a href="#aboutUs">About Us</a>
-      </div>
-    </nav>
-
-    <main>
-      <div class="${main}">
-        <h1 id="${title}">
-          Create you own team. <br />
-          Play every game.
-        </h1>
-        <p id="${text}">
-          Get to play and live a memorable experience with your team. What are
-          you waiting for this great adventure and winning rewards and bonuses.
+      <div class="${midcontainer2}">
+        <h2 class="${titleabout}">ABOUT US</h2>
+        <p class="${textabout}">
+          Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
         </p>
-        <button id="${arrow}">→</button>
-        <button id="${create}">Create you tournament now</button>
-      </div>
-      <aside class="${add}">
-        <div>
-          
-        </div>
-      </aside>
-    </main>
-
-    <div id="">
-      <!-- Partidos -->
-    </div>
-
-    <div id="${tournaments}">
-      <table class="${tournaments}">
-        <tr>
-          <td><img class="${logoCup}" src="${logo}" alt="" /><br />My Cup</td>
-          <td>Current Tournaments</td>
-          <td>Upcoming Events</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="${tables}">
-      <table class="${currentTournamentsTable}">
-        <tr>
-          <td>Logo</td>
-          <td>Tournament Name</td>
-          <td>Creator</td>
-          <td># Teams</td>
-        </tr>
-        <tr>
-          <td><img class="${trophy}" src="${trophy1}" alt="Trophy" /></td>
-          <td>Leagues Cup</td>
-          <td>Jhon Doe</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td><img class="${trophy}" src="${trophy2}" alt="" /></td>
-          <td>Champions Medellin</td>
-          <td>Carl Jhonson</td>
-          <td>16</td>
-        </tr>
-      </table>
-      <table class="${events}">
-        <tr>
-          <td>Tournament Name</td>
-          <td>Match Hour</td>
-        </tr>
-        <tr>
-          <td>Champions Medellin</td>
-          <td>18:00</td>
-        </tr>
-        <tr>
-          <td>Champions Medellin</td>
-          <td>19:00</td>
-        </tr>
-        <tr>
-          <td>Leagues Cup</td>
-          <td>21:00</td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="${aboutUs}">
-      <h2>About Us:</h2>
-      <p>
-        We are driven by a passion for sports and a mission to elevate the
-        management of sports tournaments to new heights. Our robust and
-        user-friendly platform provides comprehensive solutions for organizing
-        competitions, real-time score tracking, and detailed statistical
-        analysis from small local torunaments to large international events.
-      </p>
-      <div class="${contact}">
-        <ul class="${features}">
-          <h2>Features:</h2>
-          <li>Calendar Management.</li>
-          <br />
-          <li>Real-time Results Updates.</li>
-          <br />
-          <li>Statistical Analysis.</li>
-          <br />
-          <li>Effective Communication.</li>
-          <br />
-          <li>Customization.</li>
-          <br />
-          <li>Friendly Platform.</li>
-          <br />
-        </ul>
-        <div>
-          <div class="${questions}">
-            <div id="${logoAboutUs}">
-              <img id="${logoAbout}" src="${logo}" alt="" />
-              <h2 class="${myCup}">My Cup</h2>
-            </div>
-            <div class="${titles}">
-              <h2 class="${titles}">Questions?</h2>
-              <h2 class="${titles}">Contact Us:</h2>
-              <div class="${redes}">
-                <img class="${red}" src="${wpp}" alt="" />
-                <img class="${red}" src="${email}" alt="" />
-                <img class="${red}" src="${fb}" alt="" />
-                <img class="r${red}" src="${x}" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-</body>
-`
+    <div class="${servicessection}">
+      <h2 class ="${servicessectiontitle}">SERVICES</h2>
+      <div class="${videocontainer}">
+        <video autoplay muted loop class="${backgroundvideo}">
+          <source src="${myvideo}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class ="${team}">
+      <div class="${containerteam}">
+      <div class="${card}">
+      <h3 class="${title}">KEVIN RODAS</h3>
+      <h3 id="${title2}">DEVELOPER FS</h3>
+      <div class="${imgcontainercard}">
+        <img src="${imagekevin}" alt="About Us">
+      </div>
+      <div class="${bar}">
+        <div class="${emptybar}"></div>
+        <div class="${filledbar}"></div>
+      </div>
+
+      <div class="${circle}">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </div>
+
+    </div>
+      <div class="${card}">
+        <h3 class="${title}">KEVIN RODAS</h3>
+        <h3 id="${title2}">DEVELOPER FS</h3>
+        <div class="${imgcontainercard}">
+          <img src="${imagekevin}" alt="About Us">
+        </div>
+        <div class="${bar}">
+          <div class="${emptybar}"></div>
+          <div class="${filledbar}"></div>
+        </div>
+
+        <div class="${circle}">
+          <circle class="stroke" cx="60" cy="60" r="50"/>
+        </div>
+
+      </div>
+      <div class="${card}">
+      <h3 class="${title}">JHONIER</h3>
+      <h3 id="${title2}">DEVELOPER FS</h3>
+      <div class="${imgcontainercard}">
+        <img src="${imageJhonier}" alt="About Us">
+      </div>
+      <div class="${bar}">
+        <div class="${emptybar}"></div>
+        <div class="${filledbar}"></div>
+      </div>
+
+      <div class="${circle}">
+        <circle class="stroke" cx="60" cy="60" r="50"/>
+      </div>
+
+    </div>
+    <div class="${card}">
+      <h3 class="${title}">FELIPE</h3>
+      <h3 id="${title2}">DEVELOPER FS</h3>
+      <div class="${imgcontainercard}">
+        <img src="${imageFelipe}" alt="About Us">
+      </div>
+      <div class="${bar}">
+      <div class="${emptybar}"></div>
+      <div class="${filledbar}"></div>
+    </div>
+
+    <div class="${circle}">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </div>
+
+  </div>
+<div class="${card}">
+    <h3 class="${title}">KEVIN RODAS</h3>
+    <h3 id="${title2}">DEVELOPER FS</h3>
+    <div class="${imgcontainercard}">
+      <img src="${imagekevin}" alt="About Us">
+    </div>
+    <div class="${bar}">
+      <div class="${emptybar}"></div>
+      <div class="${filledbar}"></div>
+    </div>
+    <div class="${circle}">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </div>
+</div>
+
+<div class="${card}">
+<h3 class="${title}">KEVIN RODAS</h3>
+<h3 id="${title2}">DEVELOPER FS</h3>
+<div class="${imgcontainercard}">
+<img src="${imagekevin}" alt="About Us">
+</div>
+<div class="${bar}">
+  <div class="${emptybar}"></div>
+  <div class="${filledbar}"></div>
+</div>
+
+<div class="${circle}">
+  <circle class="stroke" cx="60" cy="60" r="50"/>
+</div>
+
+
+</div>
+    </div>  
+  </div>
+</main>
+  `
+
+
+ 
 

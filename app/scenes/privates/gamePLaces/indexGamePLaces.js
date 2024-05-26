@@ -1,4 +1,4 @@
-import {container, sidebar, userInfo, userIcon, userText,logout, menu, menuItem, icon, mainContent, header, teams, team } from './styleGamePLaces.css'
+import {container, sidebar, userInfo, userIcon, userText,logout, menu, menuItem, icon, mainContent, header, teams, team } from "./styleGamePLaces.css";
 
 export const gamePLacesPage = `
 <body>
