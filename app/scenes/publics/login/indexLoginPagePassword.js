@@ -1,86 +1,53 @@
 import {formMain, formContainer2, formStepText, formTitleText, emailInput, formBtnSumit} from './styleLogin.css'
+import {usersArray} from '../register/register'
 
 
-export function LoginPagePassword () {
-  const showPagePassword = document.getElementById("app")
 
- const html = `
+
+ export const LoginPagePassword = `
 <main>
 <section class="${formMain}">
   <article class="${formContainer2}">
     <p class="${formStepText}">STEP 2</p>
 
-    <h2 class="${formTitleText}">Enter your email to paswword</h2>
+    <h2 class="${formTitleText}">Enter your email to password</h2>
 
     <form action="" id="formPassword">
-      <input type="password" name="password" class="${emailInput}" placeholder="paswword" id="passwordInput"> 
-      
+      <input type="password" name="password" class="${emailInput}" placeholder="password" id="passwordInput">      
       <button type="submit" class="${formBtnSumit}">continue</button>
     </form>
   </article>
 </section>
 </main>
 `;
+
+let trust;
+
 const logic = () =>{
+  document.addEventListener('DOMContentLoaded', () => {
+   
+    const form = document.getElementById('formPassword');    
+    
+    form.addEventListener('submit', (event) => {
+        
+        event.preventDefault();        
+        
+        const userPasswordVerification = document.getElementById('passwordInput').value;
 
-  const saludoRecuperado = localStorage.getItem("email");
-
-const login = async (email, password) => {
-    try {
-        const response = await fetch('http://localhost:3000/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, password })
-        });
-
-        const responseData = await response.json();
-        if (response.ok) {
-            const message = responseData.message;
-            console.log('Message:', message);
-            console.log('Token:', responseData.token); // Almacena el token si es necesario
-            // Aquí puedes almacenar el mensaje en una variable si lo necesitas
-            return message;
-        } else {
-            console.log('Error message:', responseData.message);
-            // Aquí puedes almacenar el mensaje de error en una variable si lo necesitas
-            return responseData.message;
+        for(let i=0; i<= usersArray.length; i++) {
+          if(userPasswordVerification === usersArray[i].password){
+            trust = true
+            return
+          }       
         }
-    } catch (error) {
-        console.error('Error:', error);
-        return 'An error occurred';
-    }
-};
-
-document.addEventListener("DOMContentLoaded", (event) => {
-
-  document.getElementById("formPassword").addEventListener("submit", function (e) {
-    e.preventDefault()
-    const password = document.getElementById("passwordInput").value
-    const span = document.getElementById("formSpanText")
-
-
-    login(saludoRecuperado,password)
-      .then(data => {
-        console.log('Success:', data);
-        localStorage.setItem("token", data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-
-
-  })
-})
+          if(trust=== true){
+            console.log('access granted')
+          }else{
+            console.log('access denied')
+          }         
+    });
+});
+  
 }
 
-showPagePassword.innerHTML = `
-${html}
-`
-
-return {
-  html,
-  logic,
-}
-}
+logic()
