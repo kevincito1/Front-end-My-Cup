@@ -4,11 +4,11 @@ import { newsPage } from "./scenes/publics/news/indexNews"
 import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
 import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
 import {LoginPageEmail} from "./scenes/publics/login/indexLoginPageEmail"
-import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword" //
-// import {tournamentRegisterPage} from "./scenes/privates/tournamentRegister/indexTournamentRegister"
+import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword" 
+import {tournamentRegisterPage} from "./scenes/privates/tournamentRegister/indexTournamentRegister" 
 
 
- const page = document.getElementById("app")
+const page = document.getElementById("app")
 
 
 // page.innerHTML = `
@@ -32,15 +32,13 @@ import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword" 
 //`
 //loginLogic()
 
-const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
+//const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
 
- page.innerHTML = `
- ${loginHtmlPassword} `
-loginLogicPassword()
+ //page.innerHTML = `
+ //${loginHtmlPassword} `
+//loginLogicPassword()
 
-// page.innerHTML = `
-// ${tournamentRegisterPage}
-// `
+page.innerHTML = `${tournamentRegisterPage} `
 
 // import { App } from './app';
 
