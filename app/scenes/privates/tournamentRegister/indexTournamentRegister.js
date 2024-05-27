@@ -1,10 +1,10 @@
 import {tournament, title, form1, form2, form3, form4, form5, form6, form7, btn, button} from './styleTournamentRegister.css'
 
-export function TournamentPage(){
+export function ShowTournamentPage(){
 
-    const showTournamentPage = document.getElementById("app")
+    const $renderPage = document.getElementById("app")
 
-    const tournamentRegisterPage = `
+    const sceneTournamentRegisterPage = `
     <div class="tournamentRegister">
                 
     <form class="${tournament}">
@@ -80,8 +80,8 @@ export function TournamentPage(){
     </div>
     `
 
-    showTournamentPage.innerHTML=`
-    ${tournamentRegisterPage}
+    $renderPage.innerHTML=`
+    ${sceneTournamentRegisterPage}
     `    
 }
 

@@ -1,15 +1,17 @@
 
-import {sceneHome} from "./scenes/publics/homePage/indexHome"
-import { newsPage } from "./scenes/publics/news/indexNews"
-import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
-import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
-import {LoginPageEmail} from "./scenes/publics/login/indexLoginPageEmail"
-import {RegisterPage} from "./scenes/publics/register/register"
-import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword"
+// import {sceneHome} from "./scenes/publics/homePage/indexHome"
+// import { newsPage } from "./scenes/publics/news/indexNews"
+// import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
+// import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
+// import {LoginPageEmail} from "./scenes/publics/login/indexLoginPageEmail"
+// import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword"
+// import { RegisterPage } from "./scenes/publics/register/register"
 // import {tournamentRegisterPage} from "./scenes/privates/tournamentRegister/indexTournamentRegister"
+import {App} from './app'
 
+document.addEventListener('DOMContentLoaded', App)
 
- const page = document.getElementById("app")
+//  const page = document.getElementById("app")
 
 
 // page.innerHTML = `
@@ -26,14 +28,18 @@ import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword"
 // ${gamePLacesPage}
 // `    
 
-// page.innerHTML = `
-// ${LoginPageEmail}
-// `
+//const {html: loginHtmlEmail, logic: loginLogic} = LoginPageEmail()
 
-page.innerHTML = `
-${LoginPagePassword}
-`
+//page.innerHTML = `
+//${loginHtmlEmail}
+//`
+//loginLogic()
 
+// const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
+
+//  page.innerHTML = `
+//  ${loginHtmlPassword} `
+// loginLogicPassword()
 
 // page.innerHTML = `
 // ${tournamentRegisterPage}

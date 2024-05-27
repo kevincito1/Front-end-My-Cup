@@ -11,7 +11,7 @@ import {
   publishWendys
 } from "./styleNews.css";
 
-import globalStyles from "../../../styles/globalStyles.css";
+import { navigateTo } from "../../../Router";
 
 import kobe from "./assetsNews/SPORT.png";
 import publish1 from "./assetsNews/despegar-2.png";
@@ -23,12 +23,16 @@ import linda from "./assetsNews/linda.caicedo.jpeg";
 import real from "./assetsNews/realmadrid.jpeg";
 import luis from "./assetsNews/luisenrique.jpeg";
 
-export const newsPage = `
+
+export function ShowNewsPage(){
+    const $renderPage = document.getElementById("app")
+
+    const sceneNews = `
     <div class="container">
         <header>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" id="sendHome">Home</a></li>
                     <li><a href="#">Teams</a></li>
                     <li><a href="#">Matches</a></li>
                     <li><a href="#">States</a></li>
@@ -76,4 +80,15 @@ export const newsPage = `
             </section>
         </main>
     </div>
-`;
+`
+$renderPage.innerHTML =`
+${sceneNews}`
+
+const $sendHome = document.getElementById("sendHome")
+  $sendHome.addEventListener('click',(e)=>{
+  e.preventDefault();
+  navigateTo('/');
+});
+
+}
+ 

@@ -1,18 +1,21 @@
 import {container, sidebar, userInfo, userIcon, userText,logout, menu, menuItem, icon, mainContent, header, teams, team } from './stylePlayerRegisterLogged.css'
 
-export const loggedPage = `
-<body>
+import { navigateTo } from '../../../Router'
+
+export function ShowPlayerLoggedPage(){
+    const $renderPage = document.getElementById("app")
+    const sceneLoggedPage = `
     <div class="${container}">
         <div class="${sidebar}">
             <div class="${userInfo}">
                 <div class="${userIcon}">👤</div>
                 <div class="${userText}">
                     <span>User</span>
-                    <a href="#" class="${logout}">Log out</a>
+                    <a href="#" class="${logout}" id="sendHome">Log out</a>
                 </div>
             </div>
             <div class="${menu}">
-                <a href="#" class="${menuItem}">
+                <a href="#" class="${menuItem}" id="sendTournament">
                     <div class="${icon}">🏆</div>
                     <span>Tournament Register</span>
                 </a>
@@ -24,7 +27,7 @@ export const loggedPage = `
                     <div class="${icon}">⚽</div>
                     <span>Player Register</span>
                 </a>
-                <a href="#" class="${menuItem}">
+                <a href="#" class="${menuItem}" id="sendPlaces">
                     <div class="${icon}">📍</div>
                     <span>Game Places</span>
                 </a>
@@ -48,5 +51,27 @@ export const loggedPage = `
             </div>
         </div>
     </div>
-</body>
 `
+$renderPage.innerHTML = `
+${sceneLoggedPage}
+`
+const $sendTournament = document.getElementById("sendTournament")
+$sendTournament.addEventListener('click',(e)=>{
+    e.preventDefault();
+    navigateTo('/tournametRegister');
+  });
+
+    const $sendPlaces = document.getElementById("sendPlaces")
+    $sendPlaces.addEventListener('click',(e)=>{
+    e.preventDefault();
+    navigateTo('/gamePlaces');
+  });
+
+  const $sendHome = document.getElementById("sendHome")
+    $sendHome.addEventListener('click',(e)=>{
+    e.preventDefault();
+    navigateTo('/');
+    });
+}
+
+
