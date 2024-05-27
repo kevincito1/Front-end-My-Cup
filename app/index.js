@@ -4,7 +4,7 @@ import { newsPage } from "./scenes/publics/news/indexNews"
 import {loggedPage} from "./scenes/privates/playerRegister/indexPlayerRegisterLogged"
 import {gamePLacesPage} from "./scenes/privates/gamePLaces/indexGamePLaces"
 import {LoginPageEmail} from "./scenes/publics/login/indexLoginPageEmail"
-// import {LoginPagePassword} from "./scenes/privates/login/indexLoginPagePassword"
+import {LoginPagePassword} from "./scenes/publics/login/indexLoginPagePassword" //
 // import {tournamentRegisterPage} from "./scenes/privates/tournamentRegister/indexTournamentRegister"
 
 
@@ -25,19 +25,18 @@ import {LoginPageEmail} from "./scenes/publics/login/indexLoginPageEmail"
 // ${gamePLacesPage}
 // `
 
-const {html: loginHtmlEmail, logic: loginLogic} = LoginPageEmail()
+//const {html: loginHtmlEmail, logic: loginLogic} = LoginPageEmail()
 
-page.innerHTML = `
-${loginHtmlEmail}
-`
-loginLogic()
+//page.innerHTML = `
+//${loginHtmlEmail}
+//`
+//loginLogic()
 
-// const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
+const {html: loginHtmlPassword, logic: loginLogicPassword} = LoginPagePassword()
 
-// page.innerHTML = `
-// ${loginHtmlPassword}
-// `
-// loginLogicPassword()
+ page.innerHTML = `
+ ${loginHtmlPassword} `
+loginLogicPassword()
 
 // page.innerHTML = `
 // ${tournamentRegisterPage}

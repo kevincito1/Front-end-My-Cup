@@ -23,7 +23,7 @@ export function LoginPagePassword () {
 `;
 const logic = () =>{
 
-  const saludoRecuperado = localStorage.getItem("email");
+const saludoRecuperado = localStorage.getItem("email");
 
 const login = async (email, password) => {
     try {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     e.preventDefault()
     const password = document.getElementById("passwordInput").value
     const span = document.getElementById("formSpanText")
-
+    console.log(password ,saludoRecuperado)
 
     login(saludoRecuperado,password)
       .then(data => {
