@@ -497,7 +497,7 @@ video{
 }
 .bar {
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 5%;
     height: 5px;
     width: 90%;

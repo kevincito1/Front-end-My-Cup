@@ -41,8 +41,11 @@ import imageabout from "./assetsHomePage/arseny-togulev-xjnSIF9keGY-unsplash.jpg
 import imagekevin from "./assetsHomePage/kevin.jpeg";
 import imageJhonier from "./assetsHomePage/jhonier.jpeg";
 import imageFelipe from "./assetsHomePage/felipe.jpeg";
+import imagenJafet from "./assetsHomePage/jafet.jpeg";
+import imagenNicolas from "./assetsHomePage/nicolas.jpg";
+import imagenRobinson from "./assetsHomePage/robinson.jpeg";
 import { navigateTo } from "../../../Router";
-import { routes } from "../../../routes"
+
 
 
 
@@ -117,10 +120,10 @@ export function ShowHomePage() {
   
       </div>
         <div class="${card}">
-          <h3 class="${title}">KEVIN RODAS</h3>
+          <h3 class="${title}">ROBINSON PALACIO</h3>
           <h3 id="${title2}">DEVELOPER FS</h3>
           <div class="${imgcontainercard}">
-            <img src="${imagekevin}" alt="About Us">
+            <img src="${imagenRobinson}" alt="About Us">
           </div>
           <div class="${bar}">
             <div class="${emptybar}"></div>
@@ -133,7 +136,7 @@ export function ShowHomePage() {
   
         </div>
         <div class="${card}">
-        <h3 class="${title}">JHONIER</h3>
+        <h3 class="${title}">JHONIER GRACIANO</h3>
         <h3 id="${title2}">DEVELOPER FS</h3>
         <div class="${imgcontainercard}">
           <img src="${imageJhonier}" alt="About Us">
@@ -149,7 +152,7 @@ export function ShowHomePage() {
   
       </div>
       <div class="${card}">
-        <h3 class="${title}">FELIPE</h3>
+        <h3 class="${title}">FELIPE HERNANDEZ</h3>
         <h3 id="${title2}">DEVELOPER FS</h3>
         <div class="${imgcontainercard}">
           <img src="${imageFelipe}" alt="About Us">
@@ -165,10 +168,10 @@ export function ShowHomePage() {
   
     </div>
   <div class="${card}">
-      <h3 class="${title}">KEVIN RODAS</h3>
+      <h3 class="${title}">JAFET IBARGUEN</h3>
       <h3 id="${title2}">DEVELOPER FS</h3>
       <div class="${imgcontainercard}">
-        <img src="${imagekevin}" alt="About Us">
+        <img src="${imagenJafet}" alt="About Us">
       </div>
       <div class="${bar}">
         <div class="${emptybar}"></div>
@@ -180,10 +183,10 @@ export function ShowHomePage() {
   </div>
   
   <div class="${card}">
-  <h3 class="${title}">KEVIN RODAS</h3>
+  <h3 class="${title}">NICOLAS PICON</h3>
   <h3 id="${title2}">DEVELOPER FS</h3>
   <div class="${imgcontainercard}">
-  <img src="${imagekevin}" alt="About Us">
+  <img src="${imagenNicolas}" alt="About Us">
   </div>
   <div class="${bar}">
     <div class="${emptybar}"></div>

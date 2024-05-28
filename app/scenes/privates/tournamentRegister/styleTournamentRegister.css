@@ -21,12 +21,14 @@ body{
 }
 
 .tournament{
+    margin: auto;
+    width: 50%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 150px;
-    padding: 50px 200px 50px 200px;
+    
     background-color: rgb(255, 255, 255);
     border-radius: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -159,4 +161,90 @@ body{
 .btn:hover .text:nth-child(2) {
     transition-delay: 0.1s;
     translate: 0 0;
+}
+
+
+/* Estilos para las tarjetas del torneo */
+.listaArticulos {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.card{
+  background-color: #a80b0b;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 300px;
+}
+
+.cardContent {
+  padding: 10px;
+}
+
+.cardTitle {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.childdiv {
+  width: 255px;
+  height: 100px;
+  background-color: #290000;
+  border: 4px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+  position: absolute; /* Ensure the divs can be freely positioned */
+}
+
+
+
+.childdiv .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.childdiv input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #ccc;
+  width: 80%;
+}
+
+.BtnAddteam{
+
+  width: 100px;
+  height: 30px;
 }
