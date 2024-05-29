@@ -1,4 +1,4 @@
-import {ShowNotFound } from './scenes/publics/notFound'
+
 import {routes} from './routes';
 
 export function Router (){

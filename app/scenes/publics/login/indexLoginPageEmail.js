@@ -46,7 +46,7 @@ export function ShowPageLoginEmail() {
           const emailImp = document.getElementById("emailInput").value;
           const span = document.getElementById("formSpanText");
           const email = encodeURIComponent(emailImp);
-          let url = `http://127.0.0.1:3000/api/login/${email}`
+          let url = `https://mycupback.loca.lt/api/login/${email}`
   
           fetch(url, {
             method: 'GET',

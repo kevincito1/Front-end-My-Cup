@@ -26,7 +26,7 @@ export function ShowPageLoginPassword(){
   
   const login = async (email, password) => {
       try {
-          const response = await fetch('http://localhost:3000/api/login', {
+          const response = await fetch('https://mycupback.loca.lt/api/login', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
@@ -38,12 +38,13 @@ export function ShowPageLoginPassword(){
           if (response.ok) {
               const message = responseData.message;
               console.log('Message:', message);
-              console.log('Token:', responseData.token); // Almacena el token si es necesario
-              // Aquí puedes almacenar el mensaje en una variable si lo necesitas
+              console.log('Token:', responseData.token); // Store the token 
+              // store the message 
+
               return message;
           } else {
               console.log('Error message:', responseData.message);
-              // Aquí puedes almacenar el mensaje de error en una variable si lo necesitas
+              // Store the error message
               return responseData.message;
           }
       } catch (error) {

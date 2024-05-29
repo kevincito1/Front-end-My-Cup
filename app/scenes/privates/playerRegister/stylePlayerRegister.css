@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "title";
+    src: url(/app/scenes/privates/playerRegister/assetsPlayerRegister/fonts/renegade-pursuit/Renegade\ Pursuit.otf);
+}
+
+.body {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #A4161A;
+    margin: auto;
+    width: 30vw;
+    padding: 5%;
+    font-family: "title";
+    color: white;
+}
+
+.h2{
+    font-family: "title"
+}
+
+.ul{
+    margin-top: 5rem;
+}
+
+.li {
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    font-size: larger;
+}
+
+.label {
+    float: left;
+}
+
+.input {
+    float: right;
+    margin-right: 5%;
+    font-family: "title";
+    width: 120px;
+    font-size: 10px;
+}
+
+.select {
+    float: right;
+    margin-right: 5%;
+    font-family: "title";
+    width: 120px;
+    font-size: 10px;
+}
+
+.button {
+    width: 70px;
+    align-self: center;
+    background-color: #A4161A;
+    color: white;
+    font-family: "title";
+}
+
+@media screen and (max-width:500px) {
+    .form {
+        font-size: 10px;
+        align-items: center;
+    }
+    .input {
+        width: 50px;
+    }
+    .select {
+        width: 50px;
+    }
+}

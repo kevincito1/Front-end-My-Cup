@@ -1,0 +1,55 @@
+.mainContent {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 8rem;
+}
+
+.h2 {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input[type="text"], .select, .input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender label {
+    margin: 0;
+}
+
+.button {
+    padding: 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #A52A2A;
+}

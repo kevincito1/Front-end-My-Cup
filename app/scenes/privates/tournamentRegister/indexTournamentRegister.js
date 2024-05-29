@@ -280,5 +280,6 @@ export function ShowTournamentPage(){
     $renderPage.innerHTML=`
     ${sceneTournamentRegisterPage}
     `    
+
 }
 

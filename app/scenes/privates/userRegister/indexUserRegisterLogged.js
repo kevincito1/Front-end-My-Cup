@@ -1,8 +1,8 @@
-import {container, sidebar, userInfo, userIcon, userText,logout, menu, menuItem, icon, mainContent, header, teams, team } from './stylePlayerRegisterLogged.css'
+import {container, sidebar, userInfo, userIcon, userText,logout, menu, menuItem, icon, mainContent, header, teams, team } from './styleUserRegisterLogged.css'
 
 import { navigateTo } from '../../../Router'
 
-export function ShowPlayerLoggedPage(){
+export function ShowUserLoggedPage(){
     const $renderPage = document.getElementById("app")
     const sceneLoggedPage = `
     <div class="${container}">
@@ -19,11 +19,11 @@ export function ShowPlayerLoggedPage(){
                     <div class="${icon}">🏆</div>
                     <span>Tournament Register</span>
                 </a>
-                <a href="#" class="${menuItem}">
+                <a href="#" class="${menuItem}" id="sendTeams">
                     <div class="${icon}">👥</div>
                     <span>Team Register</span>
                 </a>
-                <a href="#" class="${menuItem}">
+                <a href="#" class="${menuItem}" id="sendPlayers">
                     <div class="${icon}">⚽</div>
                     <span>Player Register</span>
                 </a>
@@ -72,6 +72,20 @@ $sendTournament.addEventListener('click',(e)=>{
     e.preventDefault();
     navigateTo('/');
     });
+
+    const $sendPlayerRegister = document.getElementById("sendPlayers")
+    $sendPlayerRegister.addEventListener('click',(e)=>{
+        e.preventDefault();
+        navigateTo('/playerRegister')
+    });
+
+    const $sendTeamsRegister = document.getElementById("sendTeams")
+    $sendTeamsRegister.addEventListener('click',(e)=>{
+        e.preventDefault();
+        navigateTo('/teamRegister')
+    });
+
+
 }
 
 
